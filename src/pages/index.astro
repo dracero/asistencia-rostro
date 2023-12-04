@@ -1,0 +1,26 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+const pageTitle = "CETEC Auto-Asistencia";
+---
+
+<BaseLayout title={pageTitle}>
+  <section id="detector" class="invisible">
+    <div id="liveView" class="videoView">
+      <button id="webcamButton" class="mdc-button mdc-button--raised">
+        <span class="mdc-button__ripple"></span>
+        <span class="mdc-button__label">Habilitar cámara</span>
+      </button>
+      <video id="webcam" autoplay playsinline></video>
+      <canvas id="myCanvas" style="display: none;"></canvas>
+      <button id="captureButton">
+        Tomar foto
+      </button>
+    </div>
+  </section>
+</BaseLayout>
+<script>
+  import "../scripts/index.js";
+  document.querySelector('.hamburger').addEventListener('click', () => {
+    document.querySelector('.nav-links').classList.toggle('expanded');
+  });
+</script>

@@ -1,0 +1,20 @@
+{
+  "name": "pwa-simple",
+  "type": "module",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@mediapipe/tasks-vision": "^0.10.8",
+    "@vite-pwa/astro": "^0.1.5",
+    "astro": "^3.5.7",
+    "mongodb": "^6.3.0",
+    "workbox-window": "^7.0.0"
+  }
+}
